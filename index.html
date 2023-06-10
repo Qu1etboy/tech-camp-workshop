@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    class="bg-black text-white"
+  >
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="navbar sticky-top navbar-expand-lg navbar-dark bg-black bg-opacity-75 border-bottom border-dark py-3"
+      style="backdrop-filter: blur(10px)"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="justify-content-end collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#showcase">Showcase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header
+      class="hero-bg d-flex flex-column justify-content-center"
+      style="height: 500px"
+    >
+      <section class="container px-3">
+        <h1 class="title display-1" style="max-width: 18ch; font-weight: 800">
+          Build Things That Make The World Better
+        </h1>
+        <p class="lead" style="max-width: 70ch">
+          Building a Better World. Join us on our mission to create innovative
+          solutions and make a positive impact. Together, let's shape a brighter
+          future.
+        </p>
+      </section>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="container py-5 text-center">
+      <h2 class="title display-4 fw-bold mb-3">About us</h2>
+      <p class="fs-4 fw-light text-secondary">
+        We are a group of creators who love to creating things that help make
+        people live their life easier.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="showcase" class="container py-5">
+      <h2 class="title display-4 fw-bold mb-3 text-center">Showcase</h2>
+      <p class="fs-4 fw-light text-secondary text-center">
+        Projects, Activities, Certificates
+      </p>
+      <div class="row gy-3 mt-5">
+        <!-- Item 1 -->
+        <div class="col-md-4">
+          <div class="card bg-transparent border-dark text-white">
+            <img src="./assets/laptop.jpg" class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <small class="text-secondary">Project</small>
+              <h5 class="card-title">KU Fondue</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <a href="#" class="btn btn-outline-light">View Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-md-4">
+          <div class="card bg-transparent border-dark text-white">
+            <img src="./assets/laptop.jpg" class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <small class="text-secondary">Activity</small>
+              <h5 class="card-title">KU Tech</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <a href="#" class="btn btn-outline-light">View Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-md-4">
+          <div class="card bg-transparent border-dark text-white">
+            <img src="./assets/laptop.jpg" class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <small class="text-secondary">Certificate</small>
+              <h5 class="card-title">Paritipate in Tech Camp #1</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <a href="#" class="btn btn-outline-light">View Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="showcase.html" class="btn btn-outline-light btn-lg"
+          >See more</a
+        >
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="container py-5">
+      <h2 class="title display-4 fw-bold mb-3 text-center">Meet our team</h2>
+      <p class="fs-4 fw-light text-secondary text-center">
+        Our passionate and talented individuals work together to bring
+        innovative ideas to life, making a positive impact on the world.
+      </p>
+      <div class="row gy-3 mt-5">
+        <!-- Member 1 -->
+        <div class="col-md-4">
+          <div class="card border-dark bg-transparent text-white">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="./assets/me.jpg"
+                  class="avatar rounded-circle me-3 mb-3"
+                  style="width: 80px; height: 80px"
+                  alt="Weerawong Profile"
+                />
+                <div>
+                  <p class="h6">Weerawong Vonggatunyu</p>
+                  <p class="text-secondary">Backend Developer</p>
+                </div>
+              </div>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                maiores?
+              </p>
+              <a
+                href="team/weerawong.html"
+                class="btn btn-outline-dark text-light"
+                >About me</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="col-md-4">
+          <div class="card border-dark bg-transparent text-white">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="./assets/me.jpg"
+                  class="avatar rounded-circle me-3 mb-3"
+                  style="width: 80px; height: 80px"
+                  alt="Weerawong Profile"
+                />
+                <div>
+                  <p class="h6">Weerawong Vonggatunyu</p>
+                  <p class="text-secondary">Backend Developer</p>
+                </div>
+              </div>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                maiores?
+              </p>
+              <a
+                href="team/weerawong.html"
+                class="btn btn-outline-dark text-light"
+                >About me</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="col-md-4">
+          <div class="card border-dark bg-transparent text-white">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <img
+                  src="./assets/me.jpg"
+                  class="avatar rounded-circle me-3 mb-3"
+                  style="width: 80px; height: 80px"
+                  alt="Weerawong Profile"
+                />
+                <div>
+                  <p class="h6">Weerawong Vonggatunyu</p>
+                  <p class="text-secondary">Backend Developer</p>
+                </div>
+              </div>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+                maiores?
+              </p>
+              <a
+                href="team/weerawong.html"
+                class="btn btn-outline-dark text-light"
+                >About me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container py-5 text-center">
+      <h2 class="title display-4 fw-bold mb-3">Contact us</h2>
+      <p class="fs-4 fw-light text-secondary">
+        Get in touch. Reach out to us by sending an email and let's make a
+        difference together.
+      </p>
+      <a
+        href="https://mail.google.com/mail/u/0/?to=nonzagreanthai@gmail.com&fs=1&tf=cm"
+        target="_blank"
+        class="btn btn-lg btn-light"
+        >Send email</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-secondary bg-dark py-4 border-top border-dark"
+    >
+      <small>&copy; 2023 Portfolio. All right reserved.</small>
+    </footer>
+  </body>
+</html>

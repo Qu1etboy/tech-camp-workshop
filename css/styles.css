@@ -63,6 +63,12 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
+/* เพิ่ม effect เบลอ ให้พื้นหลัง */
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 /* Override bootstrap colors */
 .bg-dark {
   background-color: #171717 !important;

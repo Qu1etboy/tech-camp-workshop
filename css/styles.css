@@ -1,31 +1,42 @@
+/* กําหนดระยะห่างด้านบนเวลาเลื่อนมาลงที่เนื้อหา */
 html {
   scroll-padding-top: 2rem;
 }
 
+/* กําหนดความสูงตํ่าสุด 100vh คือเต็มขนาดหน้าจอ เพื่อให้ footer มาอยู่ด้านล่างจอ
+   ให้ display: flex เพื่อให้ใช้ margin top auto ได้ และ 
+   flex-direction: column เพื่อให้เนื้อหาแสดงเป็นแนวตั้ง
+*/
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* กําหนดตัว margin top ให้ footer ลงมาอยู่ด้านล่างหน้าจอ */
 footer {
   margin-top: auto;
 }
 
+/* เปลี่ยนสีตัว Hightlight เวลาเราเอาเมาส์ไปเลือก */
 ::selection {
   background-color: #ec4899;
   -webkit-text-fill-color: white;
 }
 
+/* กําหนดตัวพื้นหลัง hero */
 .hero-bg {
   background-image: url("../assets/earth.jpg");
   background-size: cover;
   background-position: 0 20%;
   background-repeat: no-repeat;
+
+  /* ทําให้ตัวรูปภาพพื้นหลังสีเข้มขึ้นเพื่อไม่ให้บังตัวอักษร */
   background-blend-mode: multiply;
   background-color: #999;
 }
 
+/* ใช้ตอนทํา timeline */
 .dot {
   width: 10px;
   height: 10px;
@@ -35,6 +46,9 @@ footer {
   margin-top: 7px;
 }
 
+/* กําหนดให้รูป avatar มีความสูงเริ่มต้นที่ 300px
+   และรูปภาพ cover ตัวขนาดมีตําแหน่งตรงกลาง 
+*/
 .avatar {
   height: 300px;
   object-fit: cover;
@@ -49,7 +63,7 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
-/* Overide bootstrap colors */
+/* Override bootstrap colors */
 .bg-dark {
   background-color: #171717 !important;
 }
